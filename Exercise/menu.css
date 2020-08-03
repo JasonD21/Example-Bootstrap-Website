@@ -1,0 +1,54 @@
+.menuH {
+    text-align: left;
+    height: 350px;
+    background-image: url("Denton Exercise/Images/restaurant4.png");
+    background-repeat: no-repeat;
+    background-size: 1950px 435px;
+    background-attachment: fixed;
+}
+
+.mText {
+    padding-top: 125px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.menu {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.menu::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("Denton Exercise/Images/background1.jpg");
+    opacity: 0.09;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.items {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 125px;
+    margin-right: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #a5a5a7;
+    
+    text-align: left;
+}
+.items dt{
+    display: inline;
+}
+
+.items:hover {
+    background-color: #e7e8ec;
+}

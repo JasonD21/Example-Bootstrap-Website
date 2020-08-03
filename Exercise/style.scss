@@ -1,0 +1,83 @@
+body{
+    .image{
+        width: 500px;
+        height: 280px;
+        margin: 150px auto;
+        perspective: 1000px;
+
+        .img1{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/coffee.jpg");}
+        .img2{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/carrotSoup.jpg");}
+        .img3{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/burger.jpg");}
+        .img4{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/vegePizza.jpg");}
+        .img5{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/wine.jpg");}
+        .img6{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/dessert.jpg");}
+        .img7{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/pasta.jpg");}
+        .img8{background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Denton exercise/Images/fish.jpg");}
+
+        .box{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-size: 0,cover;
+            transform-style: preserve-3d;
+            transition: all 0.5s;
+            &:hover{
+                transform: rotateX(80deg);
+                transform-origin: bottom;
+            }
+            
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 36px;
+                background: inherit;
+                background-size: cover, cover;
+                background-position: bottom;
+                transform: rotateX(90deg);
+                transform-origin: bottom
+            }
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 0px 100px 50px rgba(0,0,0,.5);
+                transition: all .5s;
+                opacity: .15;   
+                transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+                transform-origin: bottom;
+
+            } 
+            
+            &:hover:before{
+                opacity: 1;
+                box-shadow: 0px 0px 25px 25px rgba(0,0,0,.5);
+                transform: rotateX(0) translateZ(-60px) scale(.85);
+            }
+        }
+
+        .Imagetext{
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: #737373;
+            h2{
+                color: #262626;
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

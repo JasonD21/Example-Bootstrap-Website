@@ -1,0 +1,48 @@
+.about {
+  text-align: left;
+  height: 350px;
+  background-image: url("Denton Exercise/Images/restaurant3.jpg");
+  background-repeat: no-repeat;
+  background-size: 1950px 435px;
+  background-attachment: fixed;
+}
+.aText {
+  padding-top: 125px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.info {
+  /* height: 600px; */
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.container1 {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.counters {
+  border-top: 1px solid #604B3F ;
+  border-bottom: 1px solid #604B3F ;
+	color: rgb(8, 8, 8);
+	padding: 40px 20px;
+}
+.counters .container1 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+blockquote{
+    border-left: 7px solid #604B3F;
+    padding-left: 12px;
+}
+body {
+  font-weight: bold;
+  background-color: #f5f5f5;
+  /* font-size: x-large; */
+}
